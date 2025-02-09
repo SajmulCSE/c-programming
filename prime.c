@@ -4,7 +4,7 @@ void main () {
     int num;
     printf("Enter a number:");
     scanf("%d", &num);
-    int isPrime = 0;
+    int isPrime = 1;
 
     for (int i = 2; i < num; i++)
     {
@@ -12,18 +12,12 @@ void main () {
         {
             isPrime = 0;
             break;
-        } else {
-            isPrime = 1;
-        }
-        
+        }        
     }
 
     if(isPrime) {
         printf("This is a prime number");
     } else {
         printf("This is not a prime number.");
-    }
-
-
-    
+    }    
 }
